@@ -14,9 +14,15 @@ install with one command:
 npx skills add codemathics/trend-radar -g -a claude-code
 ```
 
-then open claude code and type: `/trend-radar`
+**when the installer says `Done!`, here's what to do next:**
 
-the first time you run it, the skill walks you through everything - python deps, notion connection, database creation, niche config, voice profile, and a test run. about 10-15 minutes start to finish. works for both technical and non-technical users. every run after that goes straight to generating your daily briefs.
+1. open claude code (the app, or run `claude` in your terminal)
+2. type `/trend-radar` and hit enter
+3. the skill greets you and walks you through a one-time setup, about 10-15 minutes: python deps, notion connection, database creation, your niches, your voice, and a test run
+
+that's it. the install only copies the skill onto your machine, so the terminal won't tell you to do this - the real start is typing `/trend-radar` inside claude code. every run after the first goes straight to generating your daily briefs (just ask "what's trending today?").
+
+works for both technical and non-technical users.
 
 `npx skills add` uses the open [skills](https://github.com/vercel-labs/skills) cli, which installs the skill files into `~/.claude/skills/`. your own config and data live separately in `~/.claude/trend-radar/`, so running `npx skills update` later never overwrites them.
 
